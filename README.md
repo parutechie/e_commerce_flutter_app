@@ -1,16 +1,32 @@
-# infinity
+# E-Commerce-Fluuter-Application
 
-A new Flutter project.
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Follow these steps to set up and run the To-Do List application on your local machine.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
+>.Flutter SDK (>=3.19.0)
+>.Dart SDK (>=2.12.0)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Clone the Repository
+```
+git clone https://github.com/parutechie/e_commerce_flutter_app
+cd e_commerce_flutter_app
+```
+### Install Dependencies
+Run the following command to install the required dependencies:
+```
+flutter pub get
+```
+### Run the Application
+To run the application on an emulator or physical device, use:
+```
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
