@@ -2,7 +2,7 @@
 
 Try this Application in your device (.apk file): https://drive.google.com/file/d/17f00_DidozHBR7F58MmQptwYy-qi6Mn3/view?usp=sharing
 
-## Default Credentials to Login (Note: You Can SignUP using give your Credentials in signUP page and then Login)
+###Default Credentials to Login (Note: You Can SignUP using give your Credentials in signUP page and then Login)
 email: test@gmail.com
 password: test123
 
