@@ -1,6 +1,6 @@
 # E-Commerce-Fluuter-Application
 
-
+![](https://cdn.discordapp.com/attachments/938262368289439805/1273226416946810942/Screenshot_1723629948.png?ex=66bdd801&is=66bc8681&hm=b8ba151e397eb68f405248d9a574f5dd6a45b893a6e47c69759f852e30cba68d&) 
 
 ## Getting Started
 
