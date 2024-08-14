@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-Follow these steps to set up and run the To-Do List application on your local machine.
+Follow these steps to set up and run the application on your local machine.
 
 ### Prerequisites
 >.Flutter SDK (>=3.19.0)
