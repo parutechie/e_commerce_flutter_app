@@ -1,9 +1,5 @@
 # E-Commerce-Fluuter-Application
 
-![](https://cdn.discordapp.com/attachments/938262368289439805/1273226416946810942/Screenshot_1723629948.png?ex=66bdd801&is=66bc8681&hm=b8ba151e397eb68f405248d9a574f5dd6a45b893a6e47c69759f852e30cba68d&) 
-
-## Getting Started
-
 Follow these steps to set up and run the application on your local machine.
 
 ### Prerequisites
@@ -25,6 +21,11 @@ To run the application on an emulator or physical device, use:
 ```
 flutter run
 ```
+
+![](https://cdn.discordapp.com/attachments/938262368289439805/1273226416946810942/Screenshot_1723629948.png?ex=66bdd801&is=66bc8681&hm=b8ba151e397eb68f405248d9a574f5dd6a45b893a6e47c69759f852e30cba68d&) 
+![](https://cdn.discordapp.com/attachments/938262368289439805/1273226417466773514/Screenshot_1723629953.png?ex=66bdd801&is=66bc8681&hm=033364dc756ae24accb11413607a30b50ae580adb37638eb68d5655622822fdf&)
+![](https://cdn.discordapp.com/attachments/938262368289439805/1273226417991192638/Screenshot_1723629981.png?ex=66bdd801&is=66bc8681&hm=b09023e226698b9da23bb4b27caf0fcd20b15b9214be8917bdc9332b2834bcb8&)
+## Getting Started
 
 
 
