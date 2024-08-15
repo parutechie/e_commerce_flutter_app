@@ -14,7 +14,7 @@ class ProductsPage extends StatefulWidget {
 }
 
 class _ProductsPageState extends State<ProductsPage> {
-  late bool displayDiscountedPrice;
+  bool? displayDiscountedPrice;
 
   @override
   void initState() {
@@ -78,7 +78,7 @@ class _ProductsPageState extends State<ProductsPage> {
             itemBuilder: (context, index) {
               return ProductItemWidget(
                 product: productProvider.products[index],
-                displayDiscountedPrice: displayDiscountedPrice,
+                displayDiscountedPrice: displayDiscountedPrice!,
               );
             },
           );
