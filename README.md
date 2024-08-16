@@ -1,9 +1,9 @@
 # E-Commerce-Fluuter-Application
 
 <<<<<<< HEAD
-Try this Application in your device (.apk file): https://drive.google.com/file/d/17f00_DidozHBR7F58MmQptwYy-qi6Mn3/view?usp=sharing
+Try this Application in your device (.apk file): 
 =======
-Try this Application in your device (.apk file): https://drive.google.com/file/d/1SexgN5YH9uhITMzd43fmcxt8S3dqg5Us/view?usp=sharing
+Try this Application in your device (.apk file): https://drive.google.com/file/d/1UVxlvD8LdE4_07Yvo724Wua37dGtcTnX/view?usp=sharing
 >>>>>>> 5a3c745226852826af604feddae35dc4ddbc489f
 
 ### Default Credentials to Login (Note: You Can SignUP using give your Credentials in signUP page and then Login)
