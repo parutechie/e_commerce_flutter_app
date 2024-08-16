@@ -153,7 +153,7 @@ class ProductItemWidget extends StatelessWidget {
               ],
             ),
           ),
-          // Positioned widget for top-right text
+          //rating
           if (displayDiscountedPrice)
             Positioned(
               top: 10,
