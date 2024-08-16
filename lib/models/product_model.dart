@@ -2,6 +2,7 @@ class ProductModel {
   final int id;
   final String title;
   final String description;
+  final String? rating;
   final double price;
   final double discountPercentage;
   final String imageUrl;
@@ -10,6 +11,7 @@ class ProductModel {
     required this.id,
     required this.title,
     required this.description,
+    required this.rating,
     required this.price,
     required this.discountPercentage,
     required this.imageUrl,
@@ -20,6 +22,7 @@ class ProductModel {
       id: json['id'],
       title: json['title'],
       description: json['description'],
+      rating: json['rating'].toString(),
       price: json['price'].toDouble(),
       discountPercentage: json['discountPercentage'].toDouble(),
       imageUrl: json['thumbnail'],
