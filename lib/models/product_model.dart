@@ -6,6 +6,7 @@ class ProductModel {
   final double price;
   final double discountPercentage;
   final String imageUrl;
+  final String category;
 
   ProductModel({
     required this.id,
@@ -15,6 +16,7 @@ class ProductModel {
     required this.price,
     required this.discountPercentage,
     required this.imageUrl,
+    required this.category,
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
@@ -26,6 +28,7 @@ class ProductModel {
       price: json['price'].toDouble(),
       discountPercentage: json['discountPercentage'].toDouble(),
       imageUrl: json['thumbnail'],
+      category: json['category'],
     );
   }
 }

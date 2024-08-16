@@ -4,7 +4,7 @@ import 'package:infinity/services/product_api_service.dart';
 class ProductController {
   final ProductApiService _apiService = ProductApiService();
 
-  Future<List<ProductModel>> fetchProducts() async {
-    return await _apiService.getProducts();
+  Future<Map<String, List<ProductModel>>> fetchProducts() async {
+    return await _apiService.getProductsByCategory();
   }
 }

@@ -1,3 +1,21 @@
+// import 'dart:convert';
+// import 'package:http/http.dart' as http;
+// import 'package:infinity/models/product_model.dart';
+
+// class ProductApiService {
+//   final String apiUrl = 'https://dummyjson.com/products';
+
+//   Future<List<ProductModel>> getProducts() async {
+//     final response = await http.get(Uri.parse(apiUrl));
+//     if (response.statusCode == 200) {
+//       List data = json.decode(response.body)['products'];
+//       return data.map((json) => ProductModel.fromJson(json)).toList();
+//     } else {
+//       throw Exception('Failed to load products');
+//     }
+//   }
+// }
+
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:infinity/models/product_model.dart';
@@ -5,11 +23,22 @@ import 'package:infinity/models/product_model.dart';
 class ProductApiService {
   final String apiUrl = 'https://dummyjson.com/products';
 
-  Future<List<ProductModel>> getProducts() async {
+  Future<Map<String, List<ProductModel>>> getProductsByCategory() async {
     final response = await http.get(Uri.parse(apiUrl));
     if (response.statusCode == 200) {
       List data = json.decode(response.body)['products'];
-      return data.map((json) => ProductModel.fromJson(json)).toList();
+      List<ProductModel> products =
+          data.map((json) => ProductModel.fromJson(json)).toList();
+
+      // Group products by category
+      Map<String, List<ProductModel>> productsByCategory = {};
+      for (var product in products) {
+        if (!productsByCategory.containsKey(product.category)) {
+          productsByCategory[product.category] = [];
+        }
+        productsByCategory[product.category]!.add(product);
+      }
+      return productsByCategory;
     } else {
       throw Exception('Failed to load products');
     }
