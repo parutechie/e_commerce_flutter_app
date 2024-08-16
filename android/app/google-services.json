@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "751573376828",
+    "project_id": "infinity-b833e",
+    "storage_bucket": "infinity-b833e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751573376828:android:d60f5f1f6563f4d6354839",
+        "android_client_info": {
+          "package_name": "com.parvesh.infinity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3HvN2FWhlFgCOuRjaoHsTgKw0SBoKLUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
