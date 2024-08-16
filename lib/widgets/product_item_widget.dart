@@ -14,10 +14,6 @@ class ProductItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // double displayedPrice = displayDiscountedPrice
-    //     ? product.price * (1 - product.discountPercentage / 100)
-    //     : product.price;
-
     double discountedPrice =
         product.price * (1 - product.discountPercentage / 100);
 
@@ -187,37 +183,8 @@ class ProductItemWidget extends StatelessWidget {
                 ),
               ),
             ),
-
-          // Container(
-          //   height: 60,
-          //   width: 140,
-          //   decoration: BoxDecoration(
-          //     color: Colors.black,
-          //     borderRadius: BorderRadius.circular(50),
-          //   ),
-          //   child: Center(
-          //     child: Text(
-          //       '\$${displayedPrice.toStringAsFixed(2)}',
-          //       style: const TextStyle(
-          //         color: Colors.white,
-          //         fontSize: 20,
-          //         fontWeight: FontWeight.bold,
-          //       ),
-          //     ),
-          //   ),
-          // )
         ],
       ),
     );
   }
 }
-// ListTile(
-//         leading: Image.network(product.imageUrl),
-//         title: Text(product.title),
-//         subtitle: Text(product.description),
-//         trailing: Text('\$${displayedPrice.toStringAsFixed(2)}'),
-//       ),
-
-
-// Positioned widget for top-right text
-      
