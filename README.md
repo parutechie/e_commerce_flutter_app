@@ -1,10 +1,6 @@
 # E-Commerce-Fluuter-Application
 
-<<<<<<< HEAD
-Try this Application in your device (.apk file): 
-=======
 Try this Application in your device (.apk file): https://drive.google.com/file/d/1UVxlvD8LdE4_07Yvo724Wua37dGtcTnX/view?usp=sharing
->>>>>>> 5a3c745226852826af604feddae35dc4ddbc489f
 
 ### Default Credentials to Login (Note: You Can SignUP using give your Credentials in signUP page and then Login)
 email: test@gmail.com
