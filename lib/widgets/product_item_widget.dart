@@ -13,9 +13,12 @@ class ProductItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double displayedPrice = displayDiscountedPrice
-        ? product.price * (1 - product.discountPercentage / 100)
-        : product.price;
+    // double displayedPrice = displayDiscountedPrice
+    //     ? product.price * (1 - product.discountPercentage / 100)
+    //     : product.price;
+
+    double discountedPrice =
+        product.price * (1 - product.discountPercentage / 100);
 
     return Container(
       height: 500,
@@ -28,10 +31,13 @@ class ProductItemWidget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
-              product.imageUrl,
-              width: 200,
+            Center(
+              child: Image.network(
+                product.imageUrl,
+                width: 200,
+              ),
             ),
 
             //title
@@ -60,24 +66,111 @@ class ProductItemWidget extends StatelessWidget {
             ),
 
             //price
-            Container(
-              height: 60,
-              width: 140,
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Center(
-                child: Text(
-                  '\$${displayedPrice.toStringAsFixed(2)}',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                displayDiscountedPrice
+                    ? Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(height: 4),
+                          Row(
+                            children: [
+                              Text(
+                                '-${product.discountPercentage.toString()}%',
+                                style: const TextStyle(
+                                  color: Colors.redAccent,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 6,
+                              ),
+                              Text(
+                                '\$${discountedPrice.toStringAsFixed(2)}',
+                                style: const TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                          //strikedOrignal Price
+                          Row(
+                            children: [
+                              const Text(
+                                'M.R.P.:',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Text(
+                                '\$${product.price.toStringAsFixed(2)}',
+                                style: const TextStyle(
+                                  decoration: TextDecoration.lineThrough,
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      )
+                    : Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: Text(
+                          '\$${product.price.toStringAsFixed(2)}',
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+
+                //Button
+                Container(
+                  height: 50,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(50),
                   ),
-                ),
-              ),
-            )
+                  child: const Center(
+                    child: Text(
+                      'Buy Now',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+
+            // Container(
+            //   height: 60,
+            //   width: 140,
+            //   decoration: BoxDecoration(
+            //     color: Colors.black,
+            //     borderRadius: BorderRadius.circular(50),
+            //   ),
+            //   child: Center(
+            //     child: Text(
+            //       '\$${displayedPrice.toStringAsFixed(2)}',
+            //       style: const TextStyle(
+            //         color: Colors.white,
+            //         fontSize: 20,
+            //         fontWeight: FontWeight.bold,
+            //       ),
+            //     ),
+            //   ),
+            // )
           ],
         ),
       ),
